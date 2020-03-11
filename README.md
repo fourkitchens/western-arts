@@ -1,36 +1,15 @@
-[![Sous](https://circleci.com/gh/fourkitchens/sous-drupal-project.svg?style=svg)](https://app.circleci.com/github/fourkitchens/sous-drupal-project/pipelines)
+
 ![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/blob/master/themes/sous_admin/assets/images/Sous.png "Sous featuring Emulsify")
 
-# Sous Project
-
-This will provide you with a starting Drupal project that is managed with Composer. The install will include a small set of contrib modules, a starting custom module for specific for the build, and a custom starting theme generated from Emulsify.
+A drupal project with example Emulsify Design system.
 
 
-## Install
-
-Use this command below and replace `PROJECT_NAME` with your chosen project name.
-
-```
-composer create-project fourkitchens/sous-drupal-project PROJECT_NAME --no-interaction
-
-```
-
-### Build project module
-
-Create a new project module
-Generate a custom module at `/web/modules/custom/PROJECT_NAME` using drupal console.
-Follow the documentation for the generate:module command [here](https://hechoendrupal.gitbooks.io/drupal-console/en/commands/generate-module.html)
-
-
-### Install Sous Drupal
-
-Get a local environment oporating. You can use the included lando configuration. Requires [Lando](https://docs.lando.dev/basics/installation.html#system-requirements)
+Run the following commands to get this project started:
 
 ```
 lando start
+yarn rebuild
 ```
-
-View your local URL and follow the install.
 
 
 ## Additional Tooling
