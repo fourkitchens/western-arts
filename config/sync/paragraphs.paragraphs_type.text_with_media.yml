@@ -1,0 +1,10 @@
+uuid: 774d7b41-ba1c-4045-a35c-e1d0b144a0a6
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_media
+label: 'Text with Media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

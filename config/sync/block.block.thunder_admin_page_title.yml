@@ -1,0 +1,18 @@
+uuid: a6ebf6ea-0f90-4631-b7c9-053259a8911c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - thunder_admin
+id: thunder_admin_page_title
+theme: thunder_admin
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
