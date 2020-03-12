@@ -1,37 +1,63 @@
-<img src="./hero.png" />
 
-[![Four Kitchens](https://img.shields.io/badge/4K-Four%20Kitchens-35AA4E.svg)](https://fourkitchens.com/)
+![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/blob/master/themes/sous_admin/assets/images/Sous.png "Sous featuring Emulsify")
 
-<h4 align="center">Customizable Styleguide + Storybook Development + Drupal 8 theme</h4>
+A drupal project with example Emulsify Design system.
 
-western_arts is a full Design System encompassing both a [Storybook](https://storybook.js.org/)/[Webpack](https://webpack.js.org/) development environment, a customizable Styleguide powered by [GatsbyJS](https://www.gatsbyjs.org/) (coming soon), and a Drupal 8 starterkit theme. It can be used as a standalone prototyping tool or inside a Drupal installation. It supports both Twig and React components!!
 
-## Documentation
+Run the following commands to get this project started:
 
-https://fourkitchens.gitbook.io/western_arts-design-system/
+```
+lando start
+yarn rebuild
+```
 
-### Quick Links
 
-1. [Installation](https://fourkitchens.gitbook.io/western_arts-design-system/installation/design-system)
-2. [Usage](https://fourkitchens.gitbook.io/western_arts-design-system/usage/commands)
+## Additional Tooling
 
-## Demo
+This package provides some additional tooling to support the build.
 
-1. [Storybook](https://western_arts-ds.github.io/western_arts-design-system)
-2. Styleguide (coming soon)
+### Helper scripts
 
-## Contributing
+To use the helper script provided you will need to have `yarn` or `npm` installed. Then just run `yarn <command>` or `npm run <command>`. For example: `yarn import-data`. These commands are bash scripts located in the `./scripts/sous` directory and defined in `package.json`.
 
-### [Code of Conduct](https://github.com/western_arts-ds/western_arts-design-system/blob/master/CODE_OF_CONDUCT.md)
+#### Configuration management scripts
 
-The project maintainers have adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+**confex**
 
-### Contribution Guide
+```
+yarn confex
+```
 
-Please also follow the issue template and pull request templates provided. See below for the correct places to post issues:
+Export active configuration to the config directory.
 
-1. [western_arts Design System](https://github.com/western_arts-ds/western_arts-design-system/issues)
-2. [Gatsby theme](https://github.com/western_arts-ds/gatsby-theme-western_arts/issues)
-3. [western_arts Twig Extensions](https://github.com/western_arts-ds/western_arts-twig-extensions/issues)
-4. [western_arts Twig Drupal Module](https://www.drupal.org/project/issues/western_arts_twig)
+**confim**
 
+```
+yarn confim
+```
+
+Import the configuration to the database.
+
+**import-data**
+
+```
+yarn import-data
+```
+
+Import a copy of the canonical database backup into your local instance. This assumes the database backup is located in `./reference/db.sql.gz`.
+
+**local-data-bak**
+
+```
+yarn local-data-bak
+```
+
+Create a local database backup. Saves the backup to the `./reference` directory.
+
+**rebuild**
+
+```
+yarn rebuild
+```
+
+Rebuild a fresh local instance of your site. Imports the canonical database backup and imports configuration into it.

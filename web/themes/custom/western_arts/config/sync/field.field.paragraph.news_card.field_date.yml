@@ -1,0 +1,21 @@
+uuid: 6cb8f7b7-d4b0-4c11-ad4b-75acd2499097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.news_card
+  module:
+    - datetime
+id: paragraph.news_card.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: news_card
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

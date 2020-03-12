@@ -1,0 +1,10 @@
+uuid: 15ec1924-2c2c-43bc-aa07-59928c498305
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.content_browser
+label: 'Content Browser'
+targetEntityType: node
+cache: true

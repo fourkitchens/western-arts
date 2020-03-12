@@ -1,0 +1,33 @@
+uuid: 4c4537fa-f4cb-45d5-a472-4bc755b326ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards.field_cards
+    - field.field.paragraph.cards.field_heading
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+id: paragraph.cards.default
+targetEntityType: paragraph
+bundle: cards
+mode: default
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_heading:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
