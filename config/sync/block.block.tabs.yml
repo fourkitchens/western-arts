@@ -1,4 +1,4 @@
-uuid: bead43c5-a911-46ff-b85b-15f37c545770
+uuid: 157b72d1-1012-4144-9e0c-05abc95d10f6
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 id: tabs
 theme: western_arts
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

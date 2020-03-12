@@ -1,0 +1,20 @@
+uuid: 879e41b7-6969-4985-b23b-59b9dd59ba61
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - western_arts
+id: mainpagecontent
+theme: western_arts
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

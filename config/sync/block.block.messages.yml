@@ -1,0 +1,20 @@
+uuid: e0b3e553-ec25-4cf3-843a-a3ca8533a26e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - western_arts
+id: messages
+theme: western_arts
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

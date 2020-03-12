@@ -1,4 +1,4 @@
-uuid: 0ff93287-dae2-4e2a-9577-da9bc7a0ea93
+uuid: 0d483742-cfec-42be-9d34-96114ba4bdcc
 langcode: en
 status: true
 dependencies:
@@ -21,7 +21,7 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
-  expand: 1
+  expand: 0
   parent: 'main:'
   suggestion: main
 visibility: {  }
