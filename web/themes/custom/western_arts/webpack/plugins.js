@@ -34,7 +34,7 @@ module.exports = {
   ImageminPlugin,
   SpriteLoaderPlugin,
   CleanWebpackPlugin: new CleanWebpackPlugin({
-    cleanOnceBeforeBuildPatterns: ['!*.png'],
-    cleanAfterEveryBuildPatterns: ['remove/**', '!js', '!*.png'],
+    cleanOnceBeforeBuildPatterns: ['!*.{png,jpg,gif,svg}'],
+    cleanAfterEveryBuildPatterns: ['remove/**', '!js', '!*.{png,jpg,gif,svg}'],
   }),
 };
