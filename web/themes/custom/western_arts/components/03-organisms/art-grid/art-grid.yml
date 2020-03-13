@@ -1,1 +1,18 @@
 art_grid_title: 'Art Events'
+art_grid_items:
+  - art_grid_item_img_url: 'https://media.giphy.com/media/uOQqRWeWE9QUE/source.gif'
+    art_grid_item_title: 'Photo Lectures Start This Week'
+  - art_grid_item_img_url: 'https://source.unsplash.com/v1VkxhTSh88/600x400'
+    art_grid_item_title: 'No Deep Kissing:'
+    art_grid_item_subtitle: 'Sculpture MFA Thesis Show Group 1'
+  - art_grid_item_img_url: 'https://source.unsplash.com/xb0wLfZH9Zo/600x400'
+    art_grid_item_title_small: true
+    art_grid_item_title: 'Lecture and Workshop with'
+    art_grid_item_subtitle: 'Nicholas Muellner'
+  - art_grid_item_img_url: 'https://media.giphy.com/media/v0FQ0m3TaUAE0/source.gif'
+    art_grid_item_title: '"Stop in the Name of Motion"'
+    art_grid_item_subtitle: 'Join the Animation class for a screening of recent works.'
+  - art_grid_item_img_url: 'https://source.unsplash.com/yu68fUQDvOI/600x400'
+    art_grid_item_title: '“Can’t you feel what’s going wrong”'
+    art_grid_item_subtitle: 'Vault installation by Eli Johnson Learn more'
+    

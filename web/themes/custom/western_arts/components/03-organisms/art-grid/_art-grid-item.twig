@@ -1,0 +1,27 @@
+{#
+  Variables:
+  art_grid_item_base_class
+  art_grid_item_img_url
+  art_grid_item_title_small
+  art_grid_item_title
+  art_grid_item_title_modifiers
+#}
+{% set art_grid_item_base_class = 'art-grid__item' %}
+
+{% if not art_grid_item_title_modifiers %}
+  {% set art_grid_item_title_modifiers = [] %}
+{% endif %}
+
+{% if art_grid_item_title_small %}
+  {% set art_grid_item_title_modifiers = art_grid_item_title_modifiers|merge(['small']) %}
+{% endif %}
+
+<div
+  {{ bem(art_grid_item_base_class) }}
+  style="background: url('{{ art_grid_item_img_url }}') no-repeat; background-size: cover;"
+>
+  <h2 {{ bem('heading', art_grid_item_title_modifiers, art_grid_item_base_class) }}>{{ art_grid_item_title }}</h2>
+  {% if art_grid_item_subtitle %}
+    <h3 {{ bem('subheading', [], art_grid_item_base_class) }}>{{ art_grid_item_subtitle }}</h3>
+  {% endif %}
+</div>

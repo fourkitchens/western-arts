@@ -20,7 +20,7 @@
     grid-row-gap: 2rem;
 }
 
-.art-grid__grid-item {
+.art-grid__item {
   border-radius: 5px;
   min-height: 300px;
   display: flex;
@@ -57,7 +57,7 @@
     grid-column: 3 / -1;
   }
 
-  h2 {
+  &__heading {
     margin-bottom: 0;
     font-family: 'PT Serif', serif;
     color: white;
@@ -66,12 +66,23 @@
     text-align: center;
     z-index: 1;
 
-    span {
-      font-size: 1.6rem;
-      display: block;
-      line-height: 1;
-      font-family: 'Inter', sans-serif;
-      margin-top: 1rem;
+    &--small {
+      font: 700 1.6rem 'Inter', sans-serif;
+
+      & + .art-grid__item__subheading {
+        font: 700 5rem 'PT Serif', serif;
+        text-align: center;
+      }
     }
+  }
+
+  &__subheading {
+    color: white;
+    font-size: 1.6rem;
+    display: block;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+    z-index: 1;
   }
 }
