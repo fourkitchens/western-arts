@@ -1,21 +1,29 @@
 {#
   Variables:
   content_hero_base_class
+  content_hero_img_url
   content_hero_title
   content_hero_paragraph
   content_hero_paragraph_2
 #}
 {% set content_hero_base_class = 'content-hero' %}
 
-<section {{ bem(content_hero_base_class) }}>
-  {% include "@atoms/text/headings/_heading.twig" with {
-    heading_level: '2',
-    heading: content_hero_title,
-  } %}
-  {% if content_hero_paragraph %}
-    <p class=first>{{ content_hero_paragraph }}</p>
-  {% endif %}
-  {% if content_hero_paragraph_2 %}
-    <p>{{ content_hero_paragraph_2 }}</p>
-  {% endif %}
+<section
+  {{ bem(content_hero_base_class) }}
+  style="background-image: url('{{ content_hero_img_url }}');"
+>
+  <div {{ bem('inner', [], content_hero_base_class) }}>
+    {% include "@atoms/text/headings/_heading.twig" with {
+      heading_level: '2',
+      heading: content_hero_title,
+    } %}
+    {% block content_hero_copy %}
+      {% if content_hero_paragraph %}
+        <p class=first>{{ content_hero_paragraph }}</p>
+      {% endif %}
+      {% if content_hero_paragraph_2 %}
+        <p>{{ content_hero_paragraph_2 }}</p>
+      {% endif %}
+    {% endblock %}
+  </div>
 </section>

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 14fr;
   grid-gap: 2rem;
+  max-width: 97%;
 
   &__title {
     color: #003594;
