@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_with_media.field_media
-    - field.field.paragraph.text_with_media.field_media_alignment
     - field.field.paragraph.text_with_media.field_text
+    - field.field.paragraph.text_with_media.field_text_with_media_heading
     - paragraphs.paragraphs_type.text_with_media
   module:
     - text
@@ -30,5 +30,12 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden:
-  field_media_alignment: true
+  field_text_with_media_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
