@@ -1,0 +1,20 @@
+$wa-button-color: color('wa-blue');
+
+.wa-button {
+  color: color('white');
+  background-color: $wa-button-color;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: cursive;
+  font-size: 2em;
+
+  &:hover {
+    background: darken($wa-button-color, 8%);
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    background: darken($wa-button-color, 25%);
+  }
+}

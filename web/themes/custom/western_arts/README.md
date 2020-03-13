@@ -1,63 +1,36 @@
+<img src="./hero.png" />
 
-![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/blob/master/themes/sous_admin/assets/images/Sous.png "Sous featuring Emulsify")
+[![Four Kitchens](https://img.shields.io/badge/4K-Four%20Kitchens-35AA4E.svg)](https://fourkitchens.com/)
 
-A drupal project with example Emulsify Design system.
+<h4 align="center">Customizable Styleguide + Storybook Development + Drupal 8 theme</h4>
 
+Sous Emulsify is a full Design System encompassing both a [Storybook](https://storybook.js.org/)/[Webpack](https://webpack.js.org/) development environment, a customizable Styleguide powered by [GatsbyJS](https://www.gatsbyjs.org/) (coming soon), and a Drupal 8 starterkit theme. It can be used as a standalone prototyping tool or inside a Drupal installation. It supports both Twig and React components!!
 
-Run the following commands to get this project started:
+## Documentation
 
-```
-lando start
-yarn rebuild
-```
+https://fourkitchens.gitbook.io/sous-design-system/
 
+### Quick Links
 
-## Additional Tooling
+1. [Installation](https://fourkitchens.gitbook.io/sous-design-system/installation/design-system)
+2. [Usage](https://fourkitchens.gitbook.io/sous-design-system/usage/commands)
 
-This package provides some additional tooling to support the build.
+## Demo
 
-### Helper scripts
+1. [Storybook](https://sous-ds.github.io/sous-design-system)
+2. Styleguide (coming soon)
 
-To use the helper script provided you will need to have `yarn` or `npm` installed. Then just run `yarn <command>` or `npm run <command>`. For example: `yarn import-data`. These commands are bash scripts located in the `./scripts/sous` directory and defined in `package.json`.
+## Contributing
 
-#### Configuration management scripts
+### [Code of Conduct](https://github.com/sous-ds/sous-design-system/blob/master/CODE_OF_CONDUCT.md)
 
-**confex**
+The project maintainers have adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
 
-```
-yarn confex
-```
+### Contribution Guide
 
-Export active configuration to the config directory.
+Please also follow the issue template and pull request templates provided. See below for the correct places to post issues:
 
-**confim**
-
-```
-yarn confim
-```
-
-Import the configuration to the database.
-
-**import-data**
-
-```
-yarn import-data
-```
-
-Import a copy of the canonical database backup into your local instance. This assumes the database backup is located in `./reference/db.sql.gz`.
-
-**local-data-bak**
-
-```
-yarn local-data-bak
-```
-
-Create a local database backup. Saves the backup to the `./reference` directory.
-
-**rebuild**
-
-```
-yarn rebuild
-```
-
-Rebuild a fresh local instance of your site. Imports the canonical database backup and imports configuration into it.
+1. [Sous Design System](https://github.com/sous-ds/sous-design-system/issues)
+2. [Gatsby theme](https://github.com/sous-ds/gatsby-theme-sous/issues)
+3. [Sous Twig Extensions](https://github.com/sous-ds/sous-twig-extensions/issues)
+4. [Sous Twig Drupal Module](https://www.drupal.org/project/issues/sous_twig)

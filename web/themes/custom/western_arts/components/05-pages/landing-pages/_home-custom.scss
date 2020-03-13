@@ -1,0 +1,47 @@
+.hero-custom {
+  display: flex;
+  flex: 0 0 100vw;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: calc(-50vw + 50%);
+  min-height: 80vh;
+  padding-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  .logo {
+    z-index: 1;
+    color: white;
+  }
+
+  .heaven {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition: all 0.05s;
+
+    &.has-mask {
+      --x: 100px;
+      --y: 150px;
+      --mask-size: 400px;
+
+      display: block;
+      cursor: none;
+      mask-image: url('../images/mask.png');
+      mask-repeat: no-repeat;
+      mask-size: var(--mask-size);
+      -webkit-mask-image: url('../images/mask.png');
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: var(--mask-size);
+      -webkit-mask-position: var(--x) var(--y);
+      mask-position: var(--x) var(--y);
+    }
+  }
+}

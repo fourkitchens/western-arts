@@ -1,0 +1,11 @@
+{% set page_layout_modifier = 'full' %}
+
+{% embed "@templates/full-width.twig" %}
+  {% block page_title %}
+    {% include "@wa_molecules/hero/hero-custom.twig" %}
+  {% endblock %}
+  {% block page_content %}
+    {% include "@wa_molecules/content-hero/content-hero.twig" %}
+    {% include "@wa_organisms/art-grid/art-grid.twig" %}
+  {% endblock %}
+{% endembed %}

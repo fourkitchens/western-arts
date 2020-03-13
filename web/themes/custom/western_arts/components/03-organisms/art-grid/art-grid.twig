@@ -1,0 +1,34 @@
+{#
+  Variables:
+  art_grid_base_class
+  art_grid_title
+#}
+{% set art_grid_base_class = 'art-grid' %}
+
+<section {{ bem(art_grid_base_class) }}>
+  {% include "@atoms/text/headings/_heading.twig" with {
+    heading_base_class: 'title',
+    heading_blockname: art_grid_base_class,
+    heading_level: '2',
+    heading: art_grid_title,
+  } %}
+  <div {{ bem('grid', [], art_grid_base_class) }}>
+    {% block art_grid %}
+      <div {{ bem('grid-item', [], art_grid_base_class) }} style="background: url('https://media.giphy.com/media/uOQqRWeWE9QUE/source.gif') no-repeat; background-size: cover;">
+        <h2>Photo Lectures Start This Week</h2>
+      </div>
+      <div {{ bem('grid-item', [], art_grid_base_class) }} style="background: url('https://source.unsplash.com/v1VkxhTSh88/600x400') no-repeat; background-size: cover;">
+        <h2>No Deep Kissing: <span>Sculpture MFA Thesis Show Group 1</span></h2>
+      </div>
+      <div {{ bem('grid-item', [], art_grid_base_class) }} style="background: url('https://source.unsplash.com/xb0wLfZH9Zo/600x400') no-repeat; background-size: cover;">
+        <h2><span>Lecture and Workshop with</span> Nicholas Muellner</h2>
+      </div>
+      <div {{ bem('grid-item', [], art_grid_base_class) }} style="background: url('https://media.giphy.com/media/v0FQ0m3TaUAE0/source.gif') no-repeat center 50%; background-size: cover;">
+        <h2>"Stop in the Name of Motion" <span>Join the Animation class for a screening of recent works.</span></h2>
+      </div>
+      <div {{ bem('grid-item', [], art_grid_base_class) }} style="background: url('https://source.unsplash.com/yu68fUQDvOI/600x400') no-repeat; background-size: cover;">
+        <h2> “Can’t you feel what’s going wrong” <span>Vault installation by Eli Johnson Learn more</span> </h2>
+      </div>
+    {% endblock %}
+  </div>
+</section>

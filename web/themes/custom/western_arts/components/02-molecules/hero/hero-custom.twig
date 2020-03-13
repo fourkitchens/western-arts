@@ -1,0 +1,8 @@
+{{ attach_library('western_arts/hero_custom') }}
+
+{% set hero__painting_src = directory ? '/' ~ directory ~ '/images/hero-painting.jpg' : hero__painting_src|default('../images/hero-painting.jpg') %}
+
+<section class="hero-custom" id="studio-hero">
+  {% include "@wa_atoms/images/studio-arts.twig" with {class: 'logo'} %}
+  <img src={{ hero__painting_src }} class="heaven"/>
+</section>
