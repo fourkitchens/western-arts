@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.event_card.field_heading
     - field.field.paragraph.event_card.field_image
     - field.field.paragraph.event_card.field_link
+    - field.field.paragraph.event_card.field_small_heading
     - field.field.paragraph.event_card.field_subheading
     - field.field.paragraph.event_card.field_text
     - paragraphs.paragraphs_type.event_card
@@ -22,13 +23,13 @@ bundle: event_card
 mode: default
 content:
   field_date:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_heading:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -36,7 +37,7 @@ content:
     type: string_textfield
     region: content
   field_image:
-    weight: 4
+    weight: 5
     settings:
       entity_browser: image_browser
       field_widget_display: rendered_entity
@@ -51,15 +52,22 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_link:
-    weight: 5
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_small_heading:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_subheading:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -67,7 +75,7 @@ content:
     type: string_textfield
     region: content
   field_text:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''

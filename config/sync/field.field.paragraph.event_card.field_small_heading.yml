@@ -1,0 +1,23 @@
+uuid: 5fbcc9cb-60e3-4474-9bf9-de6bf8067e54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_small_heading
+    - paragraphs.paragraphs_type.event_card
+id: paragraph.event_card.field_small_heading
+field_name: field_small_heading
+entity_type: paragraph
+bundle: event_card
+label: 'Small Heading'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

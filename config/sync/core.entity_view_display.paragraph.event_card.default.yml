@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.event_card.field_heading
     - field.field.paragraph.event_card.field_image
     - field.field.paragraph.event_card.field_link
+    - field.field.paragraph.event_card.field_small_heading
     - field.field.paragraph.event_card.field_subheading
     - field.field.paragraph.event_card.field_text
     - paragraphs.paragraphs_type.event_card
@@ -40,9 +41,10 @@ content:
     weight: 3
     label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_link:
     weight: 5
@@ -56,6 +58,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_small_heading:
+    type: boolean
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
   field_subheading:
     weight: 1
     label: hidden
