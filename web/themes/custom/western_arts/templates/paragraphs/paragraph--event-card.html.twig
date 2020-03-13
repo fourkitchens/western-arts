@@ -37,10 +37,9 @@
  */
 #}
 
-{% embed "@wa_organisms/art-grid/art-grid.twig" with {
-  art_grid_title: content.field_heading,
+{% include "@wa_organisms/art-grid/_art-grid-item.twig" with {
+  art_grid_item_img_url: file_url(content.field_image[0]['#media'].get('field_media_image').entity.fileuri),
+  art_grid_item_title_small: content.field_small_heading.0,
+  art_grid_item_title: content.field_heading,
+  art_grid_item_subtitle: content.field_subheading
 } %}
-  {% block art_grid %}
-    {{ content.field_event_cards }}
-  {% endblock %}
-{% endembed %}
