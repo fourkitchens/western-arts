@@ -1,11 +1,16 @@
 import React from 'react';
 import { useEffect } from '@storybook/client-api';
-import 'western-up-twig/02-molecules/menus/main-menu/main-menu';
+// Global Components
+import articleTwig from 'western-up-twig/05-pages/content-types/article.twig';
+// Global Data
 import mainMenuData from 'western-up-twig/02-molecules/menus/main-menu/main-menu.yml';
 import breadcrumbData from 'western-up-twig/02-molecules/menus/breadcrumbs/breadcrumbs.yml';
 import socialMenuData from 'western-up-twig/02-molecules/menus/social/social-menu.yml';
 import footerMenuData from 'western-up-twig/02-molecules/menus/inline/inline-menu.yml';
-import articleTwig from './wa-article.twig';
+// WA Components
+import waArticleTwig from './wa-article.twig';
+// JS
+import 'western-up-twig/02-molecules/menus/main-menu/main-menu';
 import './wa-article';
 
 /**
@@ -19,6 +24,24 @@ export const article = () => {
     <div
       dangerouslySetInnerHTML={{
         __html: articleTwig({
+          page_layout_modifier: 'contained',
+          ...mainMenuData,
+          ...breadcrumbData,
+          ...socialMenuData,
+          ...footerMenuData,
+          card__link__text: 'Click here',
+        }),
+      }}
+    />
+  );
+};
+
+export const waArticle = () => {
+  useEffect(() => Drupal.attachBehaviors(), []);
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: waArticleTwig({
           page_layout_modifier: 'contained',
           ...mainMenuData,
           ...breadcrumbData,

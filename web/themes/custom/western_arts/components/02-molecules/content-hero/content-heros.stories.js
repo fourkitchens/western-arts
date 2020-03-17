@@ -9,7 +9,7 @@ import contentHeroData from './content-hero.yml';
  */
 export default { title: 'Molecules/Content Heros' };
 
-export const artTools = () => (
+export const contentHero = () => (
   <div
     dangerouslySetInnerHTML={{
       __html: contentHeroTwig(contentHeroData),
