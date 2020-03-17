@@ -1,19 +1,23 @@
-{#
-/**
- * @file
- * Theme override to display a region.
- *
- * Available variables:
- * - content: The content for this region, typically blocks.
- * - attributes: HTML attributes for the region div.
- * - region: The name of the region variable as defined in the theme's
- *   .info.yml file.
- *
- * @see template_preprocess_region()
- */
-#}
-{% extends "@organisms/site/site-footer/site-footer.twig" %}
-
-{% block footer_content %}
-  {{ content }}
-{% endblock %}
+{% embed "@organisms/site/site-footer/site-footer.twig" with {
+  social_menu_items: {
+    1: {
+      title: 'Twitter',
+      url: '#',
+      icon: 'twitter'
+    },
+    2: {
+      title: 'Facebook',
+      url: '#',
+      icon: 'facebook'
+    },
+    3: {
+      title: 'Instagram',
+      url: '#',
+      icon: 'instagram'
+    }
+  }
+}%}
+  {% block footer__menu %}
+    {{ content }}
+  {% endblock %}
+{% endembed %}
