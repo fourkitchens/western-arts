@@ -45,9 +45,9 @@ component-libraries:
     paths:
       - node_modules/western-up-twig/05-pages
   # Project components
-  wa_atoms:
-    paths:
-      - components/01-atoms
+  # wa_atoms:
+  #   paths:
+  #     - components/01-atoms
   wa_molecules:
     paths:
       - components/02-molecules
