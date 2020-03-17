@@ -8,12 +8,14 @@
       art_quote__attribution: 'Aristotle',
       art_quote__image: 'https://source.unsplash.com/kqJfP-lrl-8/1600x1400',
     } %}
-    <p class="right-art">Our graduate painting and drawing programs are intrinsically linked with the premise that each discipline informs the other and ultimately supports the student’s decision to work in a single medium or a combination of media. The Painting graduate program draws upon contemporary practices and discourse in the field to prepare students for a life in the arts. Students are encouraged to work across disciplines and techniques in order to develop a body of work that reflects their independent investigations in painting. Studio practice is supplemented with art history seminars, visiting artist lectures, summer workshops, and travel study programs to New York City, culminating in a solo M.A. or M.F.A. thesis exhibition.</p>
-    <p class="left-art">
-      <img src="https://source.unsplash.com/_nrUXnPNNeg/1600x1000" alt=""/>
-      The Studio Arts offers both the Master of Arts degree in Studio Art and the Master of Fine Arts degree in Painting.  Recognized by U.S. News & World Report as one of America’s top graduate programs in the visual arts, the School of Art at Kent State University provides abundant opportunities for graduate students to advance their skills in all areas of studio art.  We offer the only MFA program in northeast Ohio, and the only program in the state of Ohio to offer this breadth of studio specialties.  Working in close consultation with a major advisor, graduate students pursue a sequence of course work that encourages the development of an independent, critical approach to artistry in the discipline.  Studio space on campus is available on a limited basis for full-time resident students.
-    </p>
-    <div style="clear:both;"></div>
+    {% include "@wa_molecules/art-with-text/art-with-text.twig" with {
+      art_with_text__content: 'Our graduate painting and drawing programs are intrinsically linked with the premise that each discipline informs the other and ultimately supports the student’s decision to work in a single medium or a combination of media. The Painting graduate program draws upon contemporary practices and discourse in the field to prepare students for a life in the arts. Students are encouraged to work across disciplines and techniques in order to develop a body of work that reflects their independent investigations in painting. Studio practice is supplemented with art history seminars, visiting artist lectures, summer workshops, and travel study programs to New York City, culminating in a solo M.A. or M.F.A. thesis exhibition.',
+    } %}
+    {% include "@wa_molecules/art-with-text/art-with-text.twig" with {
+      art_with_text__base_class: 'art-left',
+      art_with_text__image: 'https://source.unsplash.com/_nrUXnPNNeg/1600x1000',
+      art_with_text__content: 'The Studio Arts offers both the Master of Arts degree in Studio Art and the Master of Fine Arts degree in Painting.  Recognized by U.S. News & World Report as one of America’s top graduate programs in the visual arts, the School of Art at Kent State University provides abundant opportunities for graduate students to advance their skills in all areas of studio art.  We offer the only MFA program in northeast Ohio, and the only program in the state of Ohio to offer this breadth of studio specialties.  Working in close consultation with a major advisor, graduate students pursue a sequence of course work that encourages the development of an independent, critical approach to artistry in the discipline.  Studio space on campus is available on a limited basis for full-time resident students.',
+    } %}
     {% include "@atoms/text/headings/_heading.twig" with {
       "heading_level": 2,
       "heading": "Scratch-off Student Art Gallery",

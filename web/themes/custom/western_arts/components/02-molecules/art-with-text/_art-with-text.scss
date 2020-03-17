@@ -1,0 +1,24 @@
+.art-right {
+  padding-left: 7rem;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 4rem;
+}
+
+.art-left {
+  @include clearfix;
+
+  clear: both;
+  padding-right: 25rem;
+  line-height: 2;
+
+  img {
+    float: right;
+    margin-left: 2rem;
+    margin-right: -17rem;
+    max-width: 600px;
+    margin-top: 8rem;
+    shape-outside: padding-box;
+    padding: 1rem;
+  }
+}

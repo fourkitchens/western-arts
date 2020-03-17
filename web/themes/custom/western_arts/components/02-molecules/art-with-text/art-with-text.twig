@@ -1,0 +1,16 @@
+{% set art_with_text__base_class = art_with_text__base_class|default('art-right') %}
+
+{% embed "@atoms/text/text/01-paragraph.twig" with {
+  paragraph_base_class: art_with_text__base_class,
+} %}
+  {% block paragraph_content %}
+    {% if art_with_text__image %}
+      {% include "@atoms/images/image/responsive-image.twig" with {
+        output_image_tag: TRUE,
+        image_src: art_with_text__image,
+      } %}
+    {% endif %}
+    {# We use raw to accommodate Drupal's wysiwyg #}
+    {{ art_with_text__content|raw }}
+  {% endblock %}
+{% endembed %}
