@@ -1,11 +1,11 @@
-.art-right {
+.art-left {
   padding-left: 7rem;
   font-size: 1.4rem;
   line-height: 2;
   margin-bottom: 4rem;
 }
 
-.art-left {
+.art-right {
   @include clearfix;
 
   clear: both;
