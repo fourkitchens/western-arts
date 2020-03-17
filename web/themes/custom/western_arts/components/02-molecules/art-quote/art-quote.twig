@@ -1,0 +1,22 @@
+{#
+ # Variables:
+ # - art_quote__cite
+ # - art_quote__quote
+ # - art_quote__attribution
+ # - art_quote__image
+ #}
+
+{% set art_quote__base_class = 'art-quote' %}
+
+<section {{ bem(art_quote__base_class) }}>
+  <blockquote cite="{{ art_quote__cite }}">
+    {% include "@atoms/text/text/01-paragraph.twig" with {
+      paragraph_content: art_quote__quote,
+    } %}
+    <footer>—{{ art_quote__attribution }}</footer>
+  </blockquote>
+  {% include "@atoms/images/image/responsive-image.twig" with {
+    output_image_tag: TRUE,
+    image_src: art_quote__image,
+  } %}
+</section>
