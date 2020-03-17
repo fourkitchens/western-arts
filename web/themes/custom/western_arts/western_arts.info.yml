@@ -54,3 +54,6 @@ component-libraries:
   wa_organisms:
     paths:
       - components/03-organisms
+  wa_templates:
+    paths:
+      - components/04-templates

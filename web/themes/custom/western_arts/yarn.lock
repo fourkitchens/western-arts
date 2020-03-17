@@ -18425,9 +18425,9 @@ western-up-scss@~0.0.1:
     stylelint-config-prettier "^8.0.1"
 
 western-up-twig@~0.0.1:
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/western-up-twig/-/western-up-twig-0.0.38.tgz#1847d288dcb69ae95a4f585b8c2ced2bd79c24ce"
-  integrity sha512-qGEPpixkK00wfhwLzFlzjGI5lJpyKPWWiAuydCGLnt8qzCB26uRpjKYe256a9hb+EoXzm66Qb3tScLAnulmrRw==
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/western-up-twig/-/western-up-twig-0.0.39.tgz#bf48255823bea2c6310e0ce0cedf863e7ceda8ad"
+  integrity sha512-eLnULA2sTZikBnQlzgjAA2/iZ5aSkBO+eAJv/bWL3wYZvKDkeQ6tIq4+cYh/9WIUcV1wX1LMX9hTtBWoJOWNiA==
   dependencies:
     cross-env "5.0.5"
     eslint-config-prettier "^6.10.0"
