@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content_body
     - node.type.wa_article
-    - paragraphs.paragraphs_type.art_qutoe
+    - paragraphs.paragraphs_type.art_quote
     - paragraphs.paragraphs_type.cards
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.event_cards
@@ -30,7 +30,7 @@ settings:
     negate: 0
     target_bundles:
       text: text
-      art_qutoe: art_qutoe
+      art_quote: art_quote
       cards: cards
       event_cards: event_cards
       news_cards: news_cards
@@ -40,7 +40,7 @@ settings:
       text:
         enabled: true
         weight: -25
-      art_qutoe:
+      art_quote:
         enabled: true
         weight: -24
       cards:
