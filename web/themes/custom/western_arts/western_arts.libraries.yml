@@ -23,6 +23,6 @@ tabs:
 
 hero_custom:
   js:
-    dist/js/02-molecules/hero/hero-custom.js: {}
+    dist/js/02-molecules/hero/wa-hero.js: {}
   dependencies:
     - core/drupal

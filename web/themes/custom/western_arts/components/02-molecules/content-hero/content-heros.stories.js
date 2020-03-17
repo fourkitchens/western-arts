@@ -1,9 +1,8 @@
 import React from 'react';
-// Global Data
+// WA Components
 import contentHeroTwig from './content-hero.twig';
-
+// WA Data
 import contentHeroData from './content-hero.yml';
-
 
 /**
  * Storybook Definition.

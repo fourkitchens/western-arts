@@ -11,7 +11,7 @@ import footerMenuData from 'western-up-twig/02-molecules/menus/inline/inline-men
 import contentHeroData from '../../02-molecules/content-hero/content-hero.yml';
 import artGridData from '../../03-organisms/art-grid/art-grid.yml';
 import home from './home-custom.twig';
-import '../../02-molecules/hero/hero-custom';
+import '../../02-molecules/hero/wa-hero';
 
 /**
  * Storybook Definition.

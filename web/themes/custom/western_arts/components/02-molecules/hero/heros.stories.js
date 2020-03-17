@@ -6,12 +6,12 @@ import heroTwig from 'western-up-twig/02-molecules/hero/hero.twig';
 import globalDataImages from 'western-up-twig/_global-data/images.yml';
 
 // WA Components
-import heroCustomTwig from './hero-custom.twig';
+import heroCustomTwig from './wa-hero.twig';
 // WA Data
 import heroData from 'western-up-twig/02-molecules/hero/hero.yml';
 // JS
 import 'western-up-twig/01-atoms/images/background-image/background-image';
-import './hero-custom';
+import './wa-hero';
 
 /**
  * Storybook Definition.

@@ -1,6 +1,6 @@
 Drupal.behaviors.heroCustom = {
   attach(context) {
-    const mouseOverContent = context.querySelector('.hero-custom');
+    const mouseOverContent = context.querySelector('.wa-hero');
     const maskSize = 200;
     const maskedContent = context.querySelector('.heaven');
 
