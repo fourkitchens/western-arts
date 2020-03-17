@@ -1,0 +1,33 @@
+uuid: 564cbc4d-34f8-48d0-9d3a-1d2f120e8972
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block:8cd85d16-cea0-4e2c-9751-fb08a32cdc85'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - western_arts
+id: podcastcta
+theme: western_arts
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:8cd85d16-cea0-4e2c-9751-fb08a32cdc85'
+settings:
+  id: 'block_content:8cd85d16-cea0-4e2c-9751-fb08a32cdc85'
+  label: 'Podcast CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

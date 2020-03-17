@@ -1,0 +1,33 @@
+uuid: a6730b7e-2796-4e06-a1ca-cb46707f11a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block:cf6c704e-70fb-4999-ba95-b1d719d7d902'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - western_arts
+id: upcomingevents
+theme: western_arts
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:cf6c704e-70fb-4999-ba95-b1d719d7d902'
+settings:
+  id: 'block_content:cf6c704e-70fb-4999-ba95-b1d719d7d902'
+  label: 'Upcoming Events'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
