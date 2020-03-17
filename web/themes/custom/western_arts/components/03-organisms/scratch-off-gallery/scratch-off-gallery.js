@@ -1,14 +1,14 @@
-/* eslint-disable */ 
+/* eslint-disable */
 import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
 
-Drupal.behaviors.article = {
+Drupal.behaviors.scratchOffGallery = {
   attach(context) {
     const scContainer1 = context.getElementById('js-canvas-1')
     const scContainer2 = context.getElementById('js-canvas-2')
-    const scContainer3 = context.getElementById('js-canvas-3') 
+    const scContainer3 = context.getElementById('js-canvas-3')
     const scContainer4 = context.getElementById('js-canvas-4')
     const scContainer5 = context.getElementById('js-canvas-5')
-    const scContainer6 = context.getElementById('js-canvas-6') 
+    const scContainer6 = context.getElementById('js-canvas-6')
 
     const sc1 = new ScratchCard('#js-canvas-1', {
       scratchType: SCRATCH_TYPE.CIRCLE,
@@ -18,7 +18,7 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/n-vnWQmmVoY/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
         console.log('done')
       },
@@ -31,7 +31,7 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/t2Sai-AqIpI/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
         console.log('done')
       },
@@ -44,12 +44,12 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/26GffjN9B0o/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
         console.log('done')
       },
     })
-    
+
     const sc4 = new ScratchCard('#js-canvas-4', {
       scratchType: SCRATCH_TYPE.CIRCLE,
       containerWidth: scContainer4.offsetWidth,
@@ -58,7 +58,7 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/0WAJhFK7Q9o/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
         console.log('done')
       },
@@ -71,7 +71,7 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/45DMP6-AUpY/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
         console.log('done')
       },
@@ -84,9 +84,9 @@ Drupal.behaviors.article = {
       imageBackgroundSrc: 'https://source.unsplash.com/RYT0Bg14u8k/500x400',
       clearZoneRadius: 50,
       nPoints: 30,
-      pointSize: 4, 
+      pointSize: 4,
       callback: function() {
-        console.log('done') 
+        console.log('done')
       },
     })
 
@@ -110,7 +110,7 @@ Drupal.behaviors.article = {
       // image not loaded
       alert(error.message);
     });
-    
+
     sc3.init().then(() => {
       sc3.canvas.addEventListener('scratch.move', () => {
         let percent = sc3.getPercent().toFixed(2)
@@ -119,7 +119,7 @@ Drupal.behaviors.article = {
       // image not loaded
       alert(error.message);
     });
-    
+
     sc4.init().then(() => {
       sc4.canvas.addEventListener('scratch.move', () => {
         let percent = sc4.getPercent().toFixed(2)
@@ -128,7 +128,7 @@ Drupal.behaviors.article = {
       // image not loaded
       alert(error.message);
     });
-    
+
     sc5.init().then(() => {
       sc5.canvas.addEventListener('scratch.move', () => {
         let percent = sc5.getPercent().toFixed(2)

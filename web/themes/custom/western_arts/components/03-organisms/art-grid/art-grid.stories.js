@@ -1,9 +1,8 @@
 import React from 'react';
-// Global Data
+// Component Twig
 import artGridTwig from './art-grid.twig';
-
+// Component Data
 import artGridData from './art-grid.yml';
-
 
 /**
  * Storybook Definition.

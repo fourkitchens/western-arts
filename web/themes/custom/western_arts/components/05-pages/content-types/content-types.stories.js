@@ -11,7 +11,7 @@ import footerMenuData from 'western-up-twig/02-molecules/menus/inline/inline-men
 import waArticleTwig from './wa-article.twig';
 // JS
 import 'western-up-twig/02-molecules/menus/main-menu/main-menu';
-import './wa-article';
+import '../../03-organisms/scratch-off-gallery/scratch-off-gallery';
 
 /**
  * Storybook Definition.

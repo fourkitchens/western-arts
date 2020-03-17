@@ -16,30 +16,6 @@
       art_with_text__image: 'https://source.unsplash.com/_nrUXnPNNeg/1600x1000',
       art_with_text__content: 'The Studio Arts offers both the Master of Arts degree in Studio Art and the Master of Fine Arts degree in Painting.  Recognized by U.S. News & World Report as one of America’s top graduate programs in the visual arts, the School of Art at Kent State University provides abundant opportunities for graduate students to advance their skills in all areas of studio art.  We offer the only MFA program in northeast Ohio, and the only program in the state of Ohio to offer this breadth of studio specialties.  Working in close consultation with a major advisor, graduate students pursue a sequence of course work that encourages the development of an independent, critical approach to artistry in the discipline.  Studio space on campus is available on a limited basis for full-time resident students.',
     } %}
-    {% include "@atoms/text/headings/_heading.twig" with {
-      "heading_level": 2,
-      "heading": "Scratch-off Student Art Gallery",
-    } %}
-    <p>Use your mouse or finger to scratch off and reveal artwork.
-    <section class="scratch-off-gallery">
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-1"></div>
-      </div>
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-2"></div>
-      </div>
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-3"></div>
-      </div>
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-4"></div>
-      </div>
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-5"></div>
-      </div>
-      <div class="scratch-off-gallery__item">
-        <div id="js-canvas-6"></div>
-      </div>
-    </section>
+    {% include "@wa_organisms/scratch-off-gallery/scratch-off-gallery.twig" %}
   {% endblock %}
 {% endembed %}
