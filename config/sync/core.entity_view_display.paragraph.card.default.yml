@@ -16,22 +16,6 @@ bundle: card
 mode: default
 content:
   field_heading:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_image:
-    weight: 3
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_subheading:
     weight: 1
     label: hidden
     settings:
@@ -39,8 +23,25 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_text:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_subheading:
     weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text:
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
