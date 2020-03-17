@@ -19,7 +19,7 @@ settings:
   id: 'block_content:cf6c704e-70fb-4999-ba95-b1d719d7d902'
   label: 'Upcoming Events'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
