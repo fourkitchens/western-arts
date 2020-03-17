@@ -28,6 +28,7 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       frontpage: frontpage
+      wa_article: wa_article
     negate: true
     context_mapping:
       node: '@node.node_route_context:node'

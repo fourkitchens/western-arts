@@ -1,0 +1,19 @@
+uuid: f244b591-64f3-4bb6-adf6-db065c517683
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_title
+    - node.type.wa_article
+id: node.wa_article.field_seo_title
+field_name: field_seo_title
+entity_type: node
+bundle: wa_article
+label: 'SEO Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

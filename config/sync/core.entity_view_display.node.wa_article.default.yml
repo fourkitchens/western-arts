@@ -1,0 +1,36 @@
+uuid: 28b933f2-cd47-4944-9621-2920eb74ad92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wa_article.field_content_body
+    - field.field.node.wa_article.field_metadata
+    - field.field.node.wa_article.field_seo_title
+    - field.field.node.wa_article.field_tags
+    - field.field.node.wa_article.field_teaser_media
+    - field.field.node.wa_article.field_teaser_text
+    - node.type.wa_article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.wa_article.default
+targetEntityType: node
+bundle: wa_article
+mode: default
+content:
+  field_content_body:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_metadata: true
+  field_seo_title: true
+  field_tags: true
+  field_teaser_media: true
+  field_teaser_text: true
+  links: true

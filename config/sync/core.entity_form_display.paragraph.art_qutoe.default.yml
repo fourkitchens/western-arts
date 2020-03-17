@@ -1,0 +1,52 @@
+uuid: 6d8a8119-2195-4f61-8f6c-9c2703421fbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser_modal
+    - field.field.paragraph.art_qutoe.field_image
+    - field.field.paragraph.art_qutoe.field_subheading
+    - field.field.paragraph.art_qutoe.field_text
+    - paragraphs.paragraphs_type.art_qutoe
+  module:
+    - entity_browser
+    - text
+id: paragraph.art_qutoe.default
+targetEntityType: paragraph
+bundle: art_qutoe
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      entity_browser: media_entity_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_subheading:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

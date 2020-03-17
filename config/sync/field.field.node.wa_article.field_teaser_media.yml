@@ -1,0 +1,28 @@
+uuid: 3bd1a758-c187-4512-be78-dbe5bf992281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_media
+    - media.type.image
+    - node.type.wa_article
+id: node.wa_article.field_teaser_media
+field_name: field_teaser_media
+entity_type: node
+bundle: wa_article
+label: 'Teaser Media'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 58d79a18-c5aa-444b-95e6-812a7d837ecd
+langcode: en
+status: true
+dependencies: {  }
+id: art_qutoe
+label: 'Art Qutoe'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

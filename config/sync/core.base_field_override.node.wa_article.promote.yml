@@ -1,0 +1,22 @@
+uuid: dee1a663-a6fc-4e2c-9c75-d5579e95e2f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wa_article
+id: node.wa_article.promote
+field_name: promote
+entity_type: node
+bundle: wa_article
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: e6ebb799-3cee-42eb-bc5e-94d7098c25dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.art_qutoe
+id: paragraph.art_qutoe.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: art_qutoe
+label: Attribution
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

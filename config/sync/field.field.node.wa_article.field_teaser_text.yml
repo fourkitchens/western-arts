@@ -1,0 +1,19 @@
+uuid: c7402ba3-c976-4db4-a873-ce64bf67beb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.wa_article
+id: node.wa_article.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: wa_article
+label: 'Teaser Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
