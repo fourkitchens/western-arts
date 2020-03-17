@@ -1,0 +1,10 @@
+uuid: 6c35562d-375d-4be7-a072-9f2b8ca16ca5
+langcode: en
+status: true
+dependencies: {  }
+id: art_with_text
+label: 'Art with Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

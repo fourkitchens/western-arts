@@ -1,0 +1,41 @@
+uuid: 2c37e4f6-3c48-4fb2-8119-443c65f528e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.art_with_text.field_image
+    - field.field.paragraph.art_with_text.field_image_location
+    - field.field.paragraph.art_with_text.field_text
+    - paragraphs.paragraphs_type.art_with_text
+  module:
+    - options
+    - text
+id: paragraph.art_with_text.default
+targetEntityType: paragraph
+bundle: art_with_text
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_image_location:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content_body
     - node.type.wa_article
     - paragraphs.paragraphs_type.art_quote
+    - paragraphs.paragraphs_type.art_with_text
     - paragraphs.paragraphs_type.cards
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.event_cards
@@ -31,6 +32,7 @@ settings:
     target_bundles:
       text: text
       art_quote: art_quote
+      art_with_text: art_with_text
       cards: cards
       event_cards: event_cards
       news_cards: news_cards
@@ -39,38 +41,41 @@ settings:
     target_bundles_drag_drop:
       text:
         enabled: true
-        weight: -25
+        weight: -27
       art_quote:
         enabled: true
-        weight: -24
+        weight: -26
+      art_with_text:
+        enabled: true
+        weight: -25
       cards:
         enabled: true
-        weight: -23
+        weight: -24
       event_cards:
         enabled: true
-        weight: -22
+        weight: -23
       news_cards:
         enabled: true
-        weight: -21
+        weight: -22
       video:
         enabled: true
-        weight: -20
+        weight: -21
       cta:
         enabled: true
-        weight: -19
+        weight: -20
       card:
-        weight: -18
+        weight: -19
         enabled: false
       event_card:
-        weight: -17
+        weight: -18
         enabled: false
       image:
-        weight: -16
+        weight: -17
         enabled: false
       news_card:
-        weight: -15
+        weight: -16
         enabled: false
       text_with_media:
-        weight: -14
+        weight: -15
         enabled: false
 field_type: entity_reference_revisions

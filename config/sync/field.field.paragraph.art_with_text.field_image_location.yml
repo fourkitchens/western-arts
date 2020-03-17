@@ -1,0 +1,23 @@
+uuid: c5d33d14-079c-4207-a60e-5ff82b7e1e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_location
+    - paragraphs.paragraphs_type.art_with_text
+  module:
+    - options
+id: paragraph.art_with_text.field_image_location
+field_name: field_image_location
+entity_type: paragraph
+bundle: art_with_text
+label: 'Image Location'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
