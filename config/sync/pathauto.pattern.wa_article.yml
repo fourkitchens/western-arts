@@ -1,0 +1,22 @@
+uuid: 5a629c91-5958-440e-9049-c2dcef8ecc4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: wa_article
+label: 'WA Article'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  5a9e8dcf-6057-46ca-b56f-1af200f83d29:
+    id: node_type
+    bundles:
+      wa_article: wa_article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5a9e8dcf-6057-46ca-b56f-1af200f83d29
+selection_logic: and
+weight: -5
+relationships: {  }
