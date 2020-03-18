@@ -17,6 +17,39 @@
       art_with_text__image: 'https://source.unsplash.com/_nrUXnPNNeg/1600x1000',
       art_with_text__content: 'The Studio Arts offers both the Master of Arts degree in Studio Art and the Master of Fine Arts degree in Painting.  Recognized by U.S. News & World Report as one of America’s top graduate programs in the visual arts, the School of Art at Kent State University provides abundant opportunities for graduate students to advance their skills in all areas of studio art.  We offer the only MFA program in northeast Ohio, and the only program in the state of Ohio to offer this breadth of studio specialties.  Working in close consultation with a major advisor, graduate students pursue a sequence of course work that encourages the development of an independent, critical approach to artistry in the discipline.  Studio space on campus is available on a limited basis for full-time resident students.',
     } %}
-    {% include "@wa_organisms/scratch-off-gallery/scratch-off-gallery.twig" %}
+    {# {% include "@wa_organisms/scratch-off-gallery/scratch-off-gallery.twig" %} #}
+    {% include "@organisms/grid/grid.twig" with {
+      grid_label: 'Development label repeat mints select pedagogy whiteboard click next asynchronous learning record instructional design',
+      grid_type: 'card',
+      item_type: 'card',
+      items: {
+        1: {
+          card__image__src: "https://picsum.photos/id/987/480/300",
+          card__image__alt: "People",
+          card__image__output_image_tag: true,
+          card__heading: "Assessment ipsum laboris incididunt list in consequat",
+          card__link__url: "#",
+          card__link__text: "Continue reading",
+          card__subheading: "Person of Interest",
+          card__body: "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh."
+        },
+        2: {
+          card__image__src: "https://picsum.photos/id/678/480/300",
+          card__image__alt: "Nature",
+          card__image__output_image_tag: true,
+          card__heading: "Aliqua irure training, ullamco deserunt ad",
+          card__subheading: "Some pretty sweet nature",
+          card__body: "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo."
+        },
+        3: {
+          card__image__src: "https://picsum.photos/id/654/480/300",
+          card__image__alt: "Animals",
+          card__image__output_image_tag: true,
+          card__heading: "SCORM anim assessment mints commodo",
+          card__subheading: "Awesome animals",
+          card__body: "Tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat."
+        }
+      }
+    } %}
   {% endblock %}
 {% endembed %}
