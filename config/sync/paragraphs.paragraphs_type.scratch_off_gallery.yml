@@ -1,0 +1,10 @@
+uuid: 4a938896-dba1-444b-8aa5-7dffee17ffd6
+langcode: en
+status: true
+dependencies: {  }
+id: scratch_off_gallery
+label: 'Scratch-off Gallery'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
