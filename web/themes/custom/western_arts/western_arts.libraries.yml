@@ -26,3 +26,7 @@ hero_custom:
     dist/js/02-molecules/hero/wa-hero.js: {}
   dependencies:
     - core/drupal
+
+scratch-off-gallery:
+  js:
+    dist/js/03-organisms/scratch-off-gallery/scratch-off-gallery.js: {}
